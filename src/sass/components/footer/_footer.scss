@@ -1,0 +1,10 @@
+.footer {
+  width: 100vw;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid $border;
+  padding: getSpacing(sm);
+  // z-index: 999;
+}

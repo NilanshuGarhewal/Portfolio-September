@@ -1,0 +1,51 @@
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-family: $font-sec;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  .bottom-logo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    gap: getSpacing(sm);
+    align-items: end;
+    cursor: default;
+
+    .logo-wrapper {
+      width: auto;
+      height: auto;
+      display: flex;
+      gap: getSpacing(sm);
+      align-items: end;
+
+      .name-char {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid $border;
+        border-radius: getSpacing(md);
+        @include flex-center;
+        transition: width 0.3s $anim, height 0.3s $anim 0.3s;
+
+        &:hover {
+          width: 6rem;
+          height: 6rem;
+          font-size: 1.2rem;
+          font-family: $font-main;
+        }
+      }
+    }
+  }
+
+  .bottom-copyright {
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: $text-sec;
+  }
+}

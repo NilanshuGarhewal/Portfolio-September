@@ -1,0 +1,19 @@
+// MENU SOCIAL WRAPPER
+.menu-social-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: $font-sec;
+  text-transform: uppercase;
+  transition: opacity 0.7s $anim;
+}
+
+.menu-social-closed {
+  opacity: 0;
+}
+
+.menu-social-wrapper.menu-social-open {
+  opacity: 1;
+  transition-delay: 0.6s;
+}

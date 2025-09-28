@@ -1,0 +1,30 @@
+.about-hero-section {
+    width: 100%;
+    height: 100vh;
+    @include flex-center;
+    position: relative;
+
+    .about-name-container {
+        width: 100%;
+        height: auto;
+        @include flex-center;
+        flex-direction: column;
+        z-index: 10;
+
+        .about-hero-section-text {
+            font-size: clamp(4rem, 20vw, 10rem);
+        }
+
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: $border;
+        }
+    }
+
+    .pixel-map {
+        position: absolute;
+        z-index: 1;
+        opacity: 0.3;
+    }
+}

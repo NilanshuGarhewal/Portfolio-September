@@ -1,0 +1,17 @@
+.menu {
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 4999;
+
+  .site-blocker {
+    width: 100vw;
+    height: 100%;
+    background-color: #00000070;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+}

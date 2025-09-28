@@ -1,0 +1,41 @@
+.navbar {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: getSpacing(sm);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+    @include flex-center;
+    background-color: $primary;
+    border-radius: getSpacing(md);
+
+    span {
+      font-size: 1.5rem;
+      font-family: $font-ter;
+    }
+  }
+
+  .links-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: start;
+    gap: getSpacing(xs);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    .links-wrapper {
+      .link {
+        display: none;
+      }
+    }
+  }
+}

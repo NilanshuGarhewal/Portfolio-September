@@ -1,0 +1,121 @@
+.glow-text {
+  border: 1px solid $border;
+  padding: getSpacing(sm);
+  border-radius: 1rem;
+  color: $primary;
+  text-decoration: underline;
+  position: relative;
+}
+
+// LINKS
+
+// WHITE LINK
+.link-wrapper {
+  display: flex;
+  gap: getSpacing(md);
+
+  .link {
+    position: relative;
+
+    a {
+      color: white;
+      transition: color 0.3s $anim;
+    }
+
+    .link-dot {
+      width: 0;
+      height: 0;
+      background-color: $primary;
+      border-radius: 50%;
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      transition: width 0.3s $anim, height 0.3s $anim;
+    }
+
+    &:hover {
+      a {
+        color: $text-sec;
+      }
+
+      .link-dot {
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+}
+
+// BLACK LINK
+
+.link-wrapper-black {
+  display: flex;
+  gap: getSpacing(md);
+
+  .link {
+    position: relative;
+
+    a {
+      color: black;
+      transition: color 0.3s $anim;
+    }
+
+    .link-dot {
+      width: 0;
+      height: 0;
+      background-color: $primary;
+      border-radius: 50%;
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      transition: width 0.3s $anim, height 0.3s $anim;
+    }
+
+    &:hover {
+      a {
+        color: $text-sec;
+      }
+
+      .link-dot {
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+}
+
+.menu-link-wrapper {
+  display: flex;
+  gap: getSpacing(md);
+
+  .menu-link {
+    position: relative;
+
+    a {
+      color: white;
+      transition: color 0.3s $anim;
+    }
+
+    .link-dot {
+      width: 0;
+      height: 0;
+      background-color: $primary;
+      border-radius: 50%;
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      transition: width 0.3s $anim, height 0.3s $anim;
+    }
+
+    &:hover {
+      a {
+        color: $text-sec;
+      }
+
+      .link-dot {
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+}

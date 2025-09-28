@@ -1,0 +1,20 @@
+.project-hero-section {
+  width: 100%;
+  height: 90vh;
+  @include flex-center;
+
+  .project-hero-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .project-hero-heading {
+      font-size: clamp(4rem, 10vw, 10rem);
+    }
+
+    .project-hero-des {
+        font-family: $font-sec;
+        color: $text-sec;
+    }
+  }
+}

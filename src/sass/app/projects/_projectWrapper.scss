@@ -1,0 +1,77 @@
+.project-wrapper {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid $border;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: getSpacing(sm) getSpacing(lg);
+  position: relative;
+  text-decoration: none;
+  color: $text;
+
+  .project-name {
+    width: 100%;
+    font-size: clamp(2rem, 6vw, 5rem);
+    z-index: 20;
+  }
+
+  .project-go {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+
+    .project-go-des {
+      font-size: 1rem;
+      font-family: $font-sec;
+      text-transform: uppercase;
+      color: $text-sec;
+    }
+
+    .project-go-arrow {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 8px;
+      background-color: white;
+      color: black;
+      @include flex-center;
+    }
+  }
+
+  .project-wrapper-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    .pwb1 {
+      align-self: end;
+    }
+
+    .pwb1,
+    .pwb2 {
+      width: 100%;
+      height: 0%;
+      transition: height 0.3s $anim;
+      background-color: $primary;
+    }
+  }
+
+  &:hover {
+    .project-wrapper-background {
+      .pwb1 {
+        width: 100%;
+        height: 100%;
+      }
+
+      .pwb2 {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

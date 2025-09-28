@@ -1,0 +1,46 @@
+// ABSTRACTS
+@import "./abstracts/functions";
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+
+// BASE
+@import "./base/typography";
+@import "./base/reset";
+@import "./base/global";
+@import "./base/animations";
+
+// APPS
+@import "./app/home/home.scss";
+@import "./app/home/heroSection.scss";
+@import "./app/home/aboutSection.scss";
+@import "./app/home/projectSection.scss";
+
+@import "./app/about/about.scss";
+@import "./app/about/aboutHeroSection.scss";
+@import "./app/about/detailedAbout.scss";
+
+@import "./app/projects/projects";
+@import "./app/projects/projectHeroSection";
+@import "./app/projects/projectsMainSection";
+@import "./app/projects/projectWrapper";
+
+// COMPONENTS
+
+// NAVBAR
+@import "./components/navbar/navbar";
+
+// MENU
+@import "./components/menu/menu";
+@import "./components/menu/menuBottom";
+@import "./components/menu/menuContainer";
+@import "./components/menu/menuLogo";
+@import "./components/menu/menuRouteButton";
+
+// FOOTER
+@import "./components/footer/footer";
+@import "./components/footer/footerTop";
+@import "./components/footer/footerBottom";
+@import "./components/footer/footerResponsive";
+
+// PROJECT
+@import "./components/project/projectContainerPage";
