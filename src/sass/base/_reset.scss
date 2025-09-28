@@ -17,6 +17,7 @@ body {
   background-color: $bg-primary;
   color: $text;
   cursor: crosshair;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

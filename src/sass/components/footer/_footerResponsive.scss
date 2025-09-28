@@ -59,12 +59,21 @@
     }
 
     .footer-bottom {
-        .bottom-logo {
-            .logo-wrapper {
-                width: 100%;
-                justify-content: space-between;
+      .bottom-logo {
+        .logo-wrapper {
+          width: 100%;
+          justify-content: space-between;
+
+          .name-char {
+            &:hover {
+              width: 4rem;
+              height: 4rem;
+              font-size: 14px;
+              font-family: $font-sec;
             }
+          }
         }
+      }
 
       .bottom-copyright {
         grid-template-columns: 1fr;

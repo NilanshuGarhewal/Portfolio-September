@@ -7,22 +7,27 @@ const footerData = [
     heading: "portfolio",
     links: [
       { name: "home", href: "/" },
-      { name: "about", href: "/" },
-      { name: "projects", href: "/" },
-      { name: "resume", href: "/" },
+      { name: "about", href: "/about" },
+      { name: "projects", href: "/projects" },
     ],
   },
   {
     heading: "contact",
     links: [
-      { name: "linkedin", href: "/" },
-      { name: "github", href: "/" },
-      { name: "contact", href: "/" },
+      {
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/nilanshugarhewal",
+      },
+      { name: "github", href: "https://github.com/NilanshuGarhewal" },
     ],
   },
   {
-    heading: "legal",
-    links: [{ name: "privacy policy", href: "/" }],
+    heading: "artist",
+    links: [
+      { name: "gresic music", href: "https://gresicmusic.vercel.app/home" },
+      { name: "youtube", href: "https://www.youtube.com/@gresicbeats" },
+      { name: "instagram", href: "https://www.instagram.com/gresicmusic" },
+    ],
   },
 ];
 
