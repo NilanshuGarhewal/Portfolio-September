@@ -6,7 +6,6 @@ type MenuLogoProps = {
 };
 
 const MenuLogo: React.FC<MenuLogoProps> = ({ setOpenMenu, openMenu }) => {
-  
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
   };
@@ -19,7 +18,7 @@ const MenuLogo: React.FC<MenuLogoProps> = ({ setOpenMenu, openMenu }) => {
       <span className="menu-logo-wrapper">
         <span className="menu-logo-open">
           <p>menu</p>
-          <div className="underline"></div>
+          <div className="underline hide-mobile"></div>
         </span>
 
         <span className="menu-logo-close">

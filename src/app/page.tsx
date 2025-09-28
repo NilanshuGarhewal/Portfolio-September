@@ -5,13 +5,13 @@ import ProjectSection from "./home/projectSection/ProjectSection";
 
 const page = () => {
   return (
-      <div className="home">
-        <HeroSection />
+    <div className="home">
+      <HeroSection />
 
-        {/* <AboutSection />
+      <AboutSection />
 
-        <ProjectSection /> */}
-      </div>
+      <ProjectSection />
+    </div>
   );
 };
 

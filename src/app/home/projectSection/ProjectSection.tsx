@@ -56,32 +56,33 @@ const ProjectSection = () => {
       </div>
 
       <div
-        className="project-wrapper"
+        className="home-project-wrapper"
         onMouseLeave={() => {
           setVisible(false);
           // setHoveredProject(null);
         }}
       >
         {projects.map((p) => (
-          <Link
-            href="/"
-            key={p.id}
-            className="project-box"
-            onMouseEnter={() => {
-              setTooltip(p.tooltip);
-              setVisible(true);
-              // setHoveredProject(p.id);
-            }}
-            onMouseMove={handleMouseMove}
-          >
-            <p>{p.name}</p>
+          <Link href="/" key={p.id} className="project-box-wrapper">
+            <div
+              className="project-box"
+              onMouseEnter={() => {
+                setTooltip(p.tooltip);
+                setVisible(true);
+                // setHoveredProject(p.id);
+              }}
+              onMouseMove={handleMouseMove}
+            >
+              <p>{p.name}</p>
 
-            {/* <span
+              {/* <span
               style={{ opacity: hoveredProject === p.id ? 1 : 0 }}
               className="show-image"
             >
               <Image className="image" src={p.image} alt="image" />
             </span> */}
+            </div>
+            <span className="home-project-name hide-desk">{p.tooltip}</span>
           </Link>
         ))}
       </div>
@@ -89,7 +90,7 @@ const ProjectSection = () => {
       {/* Single tooltip */}
       {visible && (
         <div
-          className="tooltip"
+          className="tooltip hide-mobile"
           style={{ left: pos.x + 15, top: pos.y + 15, position: "fixed" }}
         >
           {tooltip}

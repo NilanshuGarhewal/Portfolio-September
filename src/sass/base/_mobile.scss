@@ -38,3 +38,9 @@ $wide: 1536px;
     display: none;
   }
 }
+
+@media (min-width: $tablet) {
+  .hide-desk {
+    display: none;
+  }
+}

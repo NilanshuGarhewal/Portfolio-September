@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
       const dy = y - lastPos.current.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      if (distance < 200) {
+      if (distance < 160) {
         // don't spawn if not moved enough (tweak 80px as you like)
         return;
       }

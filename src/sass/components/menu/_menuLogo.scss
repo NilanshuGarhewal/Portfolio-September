@@ -45,6 +45,8 @@
       .menu-logo-open {
         .underline {
           width: 100%;
+
+          
         }
       }
     }
@@ -52,7 +54,6 @@
 }
 
 .menu-logo.menu-is-open {
-
   .menu-logo-wrapper {
     .menu-logo-open {
       transform: translateY(-100%);
