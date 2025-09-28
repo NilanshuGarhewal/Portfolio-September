@@ -8,9 +8,9 @@ const page = () => {
       <div className="home">
         <HeroSection />
 
-        <AboutSection />
+        {/* <AboutSection />
 
-        <ProjectSection />
+        <ProjectSection /> */}
       </div>
   );
 };

@@ -7,7 +7,9 @@ type MenuBottomProps = {
 const MenuBottom = ({ openMenu }: MenuBottomProps) => {
   return (
     <div
-      className={`menu-social-wrapper ${openMenu ? "menu-social-open" : "menu-social-closed"}`}
+      className={`menu-social-wrapper ${
+        openMenu ? "menu-social-open" : "menu-social-closed"
+      }`}
     >
       <span className="menu-link-wrapper">
         <div className="menu-link">
@@ -16,7 +18,7 @@ const MenuBottom = ({ openMenu }: MenuBottomProps) => {
           <div className="link-dot"></div>
         </div>
 
-        <div className="menu-link">
+        <div className="menu-link hide-mobile">
           <a href="https://linkedin.com/nilanshugarhewal">github</a>
 
           <div className="link-dot"></div>

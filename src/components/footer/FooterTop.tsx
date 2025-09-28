@@ -49,7 +49,9 @@ const FooterTop = () => {
         <span>WHERE IDEAS THRIVE & WEBSITE PROSPER</span>
         <span>
           <p>{dateTime ? dateTime.toLocaleDateString() : ""}</p>
-          <p>{dateTime ? dateTime.toLocaleTimeString() : ""}</p>
+          <p className="hide-mobile">
+            {dateTime ? dateTime.toLocaleTimeString() : ""}
+          </p>
         </span>
       </div>
 

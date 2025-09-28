@@ -48,7 +48,7 @@ const Navbar = () => {
 
       <div className="links-wrapper">
         {navLinks.map(({ href, label, icon }) => (
-          <Link key={href} href={href} className="icon-animation">
+          <Link key={href} href={href} className="icon-animation hide-mobile">
             <div className="icon-animation-wrapper">
               <div className="icon">{icon}</div>
               <div className="link-name">{label}</div>

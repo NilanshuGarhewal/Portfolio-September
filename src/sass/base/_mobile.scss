@@ -1,0 +1,40 @@
+// SIZES
+$mobile: 480px; // phones
+$tablet: 768px; // tablets
+$laptop: 1024px; // small laptops
+$desktop: 1280px; // desktops
+$wide: 1536px;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: $tablet) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop {
+    @media (max-width: $laptop) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: $desktop) {
+      @content;
+    }
+  }
+  @if $breakpoint == wide {
+    @media (max-width: $wide) {
+      @content;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .hide-mobile {
+    display: none;
+  }
+}
