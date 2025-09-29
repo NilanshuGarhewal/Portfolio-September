@@ -9,7 +9,7 @@ const Menu = () => {
     <div className="menu">
       <MenuLogo setOpenMenu={setOpenMenu} openMenu={openMenu} />
 
-      <MenuConainer openMenu={openMenu} />
+      <MenuConainer setOpenMenu={setOpenMenu} openMenu={openMenu} />
     </div>
   );
 };

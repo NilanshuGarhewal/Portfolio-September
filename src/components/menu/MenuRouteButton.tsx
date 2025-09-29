@@ -24,14 +24,20 @@ const routes = [
 ];
 
 type MenuProps = {
+  setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
   openMenu: boolean;
 };
 
-const MenuRouteButton = ({ openMenu }: MenuProps) => {
+const MenuRouteButton: React.FC<MenuProps> = ({ setOpenMenu, openMenu }) => {
   return (
     <>
       {routes.map((route, index) => (
-        <Link key={index} href={route.path} className="menu-route-wrapper">
+        <Link
+          key={index}
+          href={route.path}
+          className="menu-route-wrapper"
+          onClick={() => setOpenMenu(false)}
+        >
           <div className="route-container">
             <div className={`route-logo ${openMenu ? "route-logo-open" : ""}`}>
               <span className="icon-wrapper">
