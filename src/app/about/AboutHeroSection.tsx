@@ -14,8 +14,7 @@ const AboutHeroSection = () => {
         <Image
           src={"/images/pixellated-india-map.png"}
           alt="map"
-          width={500}
-          height={500}
+          fill
         />
       </span>
     </div>

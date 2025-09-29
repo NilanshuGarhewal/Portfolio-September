@@ -12,6 +12,19 @@
     flex-direction: column;
     gap: getSpacing(md);
 
+    @include respond(desktop) {
+      width: 70%;
+    }
+
+    @include respond(laptop) {
+      width: 90%;
+    }
+
+    @include respond(tablet) {
+      width: 100%;
+      padding: 0 getSpacing(md);
+    }
+
     .about-heading {
       line-height: 1;
       display: flex;
@@ -19,7 +32,7 @@
       align-items: start;
 
       p {
-        font-size: 8rem;
+        font-size: clamp(5rem, 10vw, 10rem);
         color: $primary;
         border: 1px solid $border;
         border-radius: 2rem;
@@ -30,9 +43,17 @@
     .about-text {
       width: 100%;
       height: auto;
-      font-family: $font-ter;
-      font-size: 1.2rem;
-      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      gap: getSpacing(md);
+
+      .about-text-para {
+        width: 100%;
+        height: auto;
+        font-family: $font-ter;
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
 
       // .char {
       //   display: inline-block;

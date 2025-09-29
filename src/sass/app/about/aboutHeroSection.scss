@@ -1,30 +1,42 @@
 .about-hero-section {
+  width: 100%;
+  height: 100vh;
+  @include flex-center;
+  position: relative;
+
+  .about-name-container {
     width: 100%;
-    height: 100vh;
+    height: auto;
     @include flex-center;
-    position: relative;
+    flex-direction: column;
+    z-index: 10;
 
-    .about-name-container {
-        width: 100%;
-        height: auto;
-        @include flex-center;
-        flex-direction: column;
-        z-index: 10;
-
-        .about-hero-section-text {
-            font-size: clamp(4rem, 20vw, 10rem);
-        }
-
-        .divider {
-            width: 100%;
-            height: 1px;
-            background: $border;
-        }
+    .about-hero-section-text {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: clamp(2rem, 20vw, 10rem);
     }
 
-    .pixel-map {
-        position: absolute;
-        z-index: 1;
-        opacity: 0.3;
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: $border;
     }
+  }
+
+  .pixel-map {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+    width: 500px;
+    height: 500px;
+
+    @include respond(tablet) {
+      width: 400px;
+      height: 400px;
+    }
+  }
 }
