@@ -9,10 +9,23 @@
   text-decoration: none;
   color: $text;
 
+  @include respond(laptop) {
+    padding: getSpacing(lg) getSpacing(md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: getSpacing(md);
+  }
+
   .project-name {
     width: 100%;
-    font-size: clamp(2rem, 6vw, 5rem);
+    font-size: clamp(4rem, 6vw, 5rem);
     z-index: 20;
+
+    @include respond(mobile) {
+      text-align: center;
+    }
   }
 
   .project-go {
@@ -23,11 +36,21 @@
     justify-content: space-between;
     z-index: 20;
 
+    @include respond(mobile) {
+      flex-direction: column;
+      gap: getSpacing(lg);
+      // align-items: end;
+    }
+
     .project-go-des {
       font-size: 1rem;
       font-family: $font-sec;
       text-transform: uppercase;
       color: $text-sec;
+
+      @include respond(mobile) {
+        font-size: 12px;
+      }
     }
 
     .project-go-arrow {
