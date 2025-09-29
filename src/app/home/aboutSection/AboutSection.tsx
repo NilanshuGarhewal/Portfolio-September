@@ -6,15 +6,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const parts = [
-  "Loves to transform ideas into clean, functional, and user-friendly digital experiences. My expertise lies in building modern ",
+  "I'm ",
   <span className="glow-text" key={1}>
-    web applications
+    Nilanshu Garhewal
   </span>,
-  " with React, Next.js, and ",
+  ,
+  ", & i am specialized in building clean, efficient, and user-friendly solutions with modern technologies. Over the past few years, I’ve worked on multiple",
   <span className="glow-text" key={2}>
-    backend technologies
+    Projects
   </span>,
-  " and I am constantly exploring new tools to stay ahead of the curve.",
+  ,
+  "that improved usability, optimized performance, and turned ideas into working products.",
 ];
 
 const AboutSection = () => {

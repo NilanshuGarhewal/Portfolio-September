@@ -1,15 +1,11 @@
 "use client";
 
 import React from "react";
-import {
-  HouseIcon,
-  InfoIcon,
-  SquaresFourIcon,
-  // AddressBookIcon,
-} from "@phosphor-icons/react";
+import { HouseIcon, InfoIcon, SquaresFourIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import Menu from "../menu/Menu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
@@ -27,14 +23,11 @@ const navLinks = [
     label: "PROJECTS",
     icon: <SquaresFourIcon size={22} weight="fill" />,
   },
-  // {
-  //   href: "/contact",
-  //   label: "CONTACT",
-  //   icon: <AddressBookIcon size={22} weight="fill" />,
-  // },
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -47,15 +40,18 @@ const Navbar = () => {
       </div>
 
       <div className="links-wrapper">
-        {navLinks.map(({ href, label, icon }) => (
-          <Link key={href} href={href} className="icon-animation hide-mobile">
-            <div className="icon-animation-wrapper">
-              <div className="icon">{icon}</div>
-              <div className="link-name">{label}</div>
-            </div>
-          </Link>
-        ))}
-
+        {navLinks.map(({ href, label, icon }) => {
+          const isActive = pathname === href;
+          return (
+            <Link key={href} href={href} className="icon-animation hide-mobile">
+              <div className="icon-animation-wrapper">
+                <div className="icon">{icon}</div>
+                <div className="link-name">{label}</div>
+              </div>
+              <div className={`dot ${isActive ? "active" : ""}`} />
+            </Link>
+          );
+        })}
         <Menu />
       </div>
     </div>

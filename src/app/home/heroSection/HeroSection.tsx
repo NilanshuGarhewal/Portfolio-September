@@ -22,8 +22,7 @@ const HeroSection: React.FC = () => {
       const dy = y - lastPos.current.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      if (distance < 160) {
-        // don't spawn if not moved enough (tweak 80px as you like)
+      if (distance < 128) {
         return;
       }
     }
@@ -36,7 +35,7 @@ const HeroSection: React.FC = () => {
     // remove after animation finishes
     setTimeout(() => {
       setSquares((prev) => prev.filter((sq) => sq.id !== id));
-    }, 700);
+    }, 1000);
   };
 
   return (

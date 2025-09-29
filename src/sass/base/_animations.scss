@@ -12,6 +12,25 @@
   text-decoration: none;
   cursor: pointer;
   color: $text;
+  position: relative;
+  z-index: 9999;
+
+  .dot {
+    width: 0;
+    height: 0;
+    background-color: $primary;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    transition: width 0.3s $anim, height 0.3s $anim;
+  }
+
+  .dot.active {
+    width: 10px;
+    height: 10px;
+  }
 
   .icon-animation-wrapper {
     display: flex;

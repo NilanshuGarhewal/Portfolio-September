@@ -10,6 +10,11 @@
   display: none;
 }
 
+*::selection {
+  background: $text;
+  color: $primary;
+}
+
 body {
   width: 100vw;
   height: auto;
