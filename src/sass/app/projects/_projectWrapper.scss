@@ -8,6 +8,7 @@
   position: relative;
   text-decoration: none;
   color: $text;
+  overflow: hidden;
 
   @include respond(laptop) {
     padding: getSpacing(lg) getSpacing(md);
@@ -60,6 +61,12 @@
       background-color: white;
       color: black;
       @include flex-center;
+      transform: translateY(300%);
+      transition: transform 0.3s $anim;
+
+      @include respond(tablet) {
+        transform: translateY(0%);
+      }
     }
   }
 
@@ -85,6 +92,12 @@
   }
 
   &:hover {
+    .project-go {
+      .project-go-arrow {
+        transform: translateY(0%);
+      }
+    }
+
     .project-wrapper-background {
       .pwb1 {
         width: 100%;
@@ -97,4 +110,9 @@
       }
     }
   }
+}
+
+.project-name .char {
+  display: inline-block;
+  overflow: hidden;
 }

@@ -49,8 +49,14 @@
 // BLACK LINK
 
 .link-wrapper-black {
+  overflow: hidden;
   display: flex;
   gap: getSpacing(md);
+
+  .over {
+    display: flex;
+    gap: getSpacing(md);
+  }
 
   .link {
     position: relative;
@@ -119,4 +125,3 @@
     }
   }
 }
-

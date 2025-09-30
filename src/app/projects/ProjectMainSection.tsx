@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: "3",
-    name: "VOX V1",
+    name: "VOX-V1",
     des: "FREE MUSIC STREAMING PLATFORM.",
     releaseDate: "2024-08-10",
     info: "A free and minimalistic music streaming web app that lets users upload, explore, and listen to tracks online. Inspired by platforms like SoundCloud.",
