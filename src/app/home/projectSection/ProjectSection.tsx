@@ -30,7 +30,7 @@ const ProjectSection = () => {
         const dy = targetPos.y - prev.y;
 
         return {
-          x: prev.x + dx * 0.1, // 0.1 = speed (lower is smoother/slower)
+          x: prev.x + dx * 0.1, // speed factor
           y: prev.y + dy * 0.1,
         };
       });
@@ -42,7 +42,8 @@ const ProjectSection = () => {
     return () => cancelAnimationFrame(raf);
   }, [targetPos]);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  // ✅ fix: use HTMLDivElement since handler is on a <div>
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     setTargetPos({ x: e.clientX, y: e.clientY });
   };
 
@@ -63,7 +64,7 @@ const ProjectSection = () => {
         }}
       >
         {projects.map((p) => (
-          <Link href="/" key={p.id} className="project-box-wrapper">
+          <Link href="/projects" key={p.id} className="project-box-wrapper">
             <div
               className="project-box"
               onMouseEnter={() => {
@@ -74,13 +75,6 @@ const ProjectSection = () => {
               onMouseMove={handleMouseMove}
             >
               <p>{p.name}</p>
-
-              {/* <span
-              style={{ opacity: hoveredProject === p.id ? 1 : 0 }}
-              className="show-image"
-            >
-              <Image className="image" src={p.image} alt="image" />
-            </span> */}
             </div>
             <span className="home-project-name hide-desk">{p.tooltip}</span>
           </Link>
