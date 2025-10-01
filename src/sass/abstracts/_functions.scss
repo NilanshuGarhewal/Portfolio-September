@@ -1,7 +1,18 @@
+
+
+// FUNCTIONS
 @function getSpacing($size) {
   @return map-get($spacing-scale, $size);
 }
 
 @function rem($px) {
   @return $px / 16 * 1rem;
+}
+
+// MIXINS
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

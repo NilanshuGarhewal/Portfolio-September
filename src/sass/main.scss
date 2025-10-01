@@ -1,47 +1,44 @@
-// ABSTRACTS
-@import "./abstracts/functions";
 @import "./abstracts/variables";
-@import "./abstracts/mixin";
+@import "./abstracts/functions";
 
-// BASE
-@import "./base/typography";
-@import "./base/reset";
-@import "./base/global";
 @import "./base/animations";
+@import "./base/global";
 @import "./base/mobile";
+@import "./base/reset";
+@import "./base/typography";
 
-// APPS
-@import "./app/home/home.scss";
-@import "./app/home/heroSection.scss";
-@import "./app/home/aboutSection.scss";
-@import "./app/home/projectSection.scss";
+// // APPS
+@import "./app/home/home";
+@import "./app/home/heroSection";
+@import "./app/home/aboutSection";
+@import "./app/home/projectSection";
 
-@import "./app/about/about.scss";
-@import "./app/about/aboutHeroSection.scss";
-@import "./app/about/detailedAbout.scss";
+@import "./app/about/about";
+@import "./app/about/aboutHeroSection";
+@import "./app/about/detailedAbout";
 
 @import "./app/projects/projects";
 @import "./app/projects/projectHeroSection";
 @import "./app/projects/projectsMainSection";
 @import "./app/projects/projectWrapper";
 
-// COMPONENTS
+// // COMPONENTS
 
-// NAVBAR
+// // NAVBAR
 @import "./components/navbar/navbar";
 
-// MENU
+// // MENU
 @import "./components/menu/menu";
 @import "./components/menu/menuBottom";
 @import "./components/menu/menuContainer";
 @import "./components/menu/menuLogo";
 @import "./components/menu/menuRouteButton";
 
-// FOOTER
+// // FOOTER
 @import "./components/footer/footer";
 @import "./components/footer/footerTop";
 @import "./components/footer/footerBottom";
 @import "./components/footer/footerResponsive";
 
-// PROJECT
+// // PROJECT
 @import "./components/project/projectContainerPage";
