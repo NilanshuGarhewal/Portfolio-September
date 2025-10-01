@@ -7,7 +7,7 @@
   right: 0;
   z-index: 99999;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding: getSpacing(sm);
   font-family: $font-sec;
@@ -191,7 +191,7 @@
       font-size: 1rem;
       display: flex;
       justify-content: space-between;
-      align-items: end;
+      align-items: flex-end;
       border-top: 1px solid $border;
       flex-shrink: 0;
 

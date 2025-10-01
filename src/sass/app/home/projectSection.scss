@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: felx-end;
 
     .name {
       font-size: clamp(6rem, 10vw, 10rem);
@@ -32,7 +32,7 @@
     height: auto;
     display: flex;
     column-gap: getSpacing(sm);
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
 
     .project-box-wrapper {

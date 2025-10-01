@@ -40,7 +40,7 @@
     @include respond(mobile) {
       flex-direction: column;
       gap: getSpacing(lg);
-      // align-items: end;
+      // align-items: felx-end;
     }
 
     .project-go-des {
@@ -79,7 +79,7 @@
     grid-template-rows: 1fr 1fr;
 
     .pwb1 {
-      align-self: end;
+      align-self: flex-end;
     }
 
     .pwb1,
