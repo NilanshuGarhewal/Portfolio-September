@@ -6,7 +6,6 @@ import { AnimatePresence } from "framer-motion";
 import ProjectContainerPage from "@/components/project/ProjectContainerPage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Marquee from "@/library/marquee/Marquee";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,6 +17,9 @@ type ProjectWrapperProps = {
     releaseDate: string;
     info: string;
     techUsed: string;
+    image: string,
+    website: string,
+    github: string;
   };
 };
 

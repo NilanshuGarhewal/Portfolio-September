@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-import image from "@/assets/images/img2.jpg";
 
 type Project = {
   id: string;
@@ -12,6 +11,9 @@ type Project = {
   releaseDate: string;
   info: string;
   techUsed: string;
+  image: string;
+  website: string;
+  github: string;
 };
 
 type Props = {
@@ -62,7 +64,10 @@ const ProjectContainerPage: React.FC<Props> = ({
     { title: "TECH USED", value: project.techUsed },
   ];
 
-  const links: string[] = ["linkedin", "github"];
+  const links: { name: string; url: string }[] = [
+    { name: "github", url: project.github },
+    { name: "linkedin", url: "https://www.linkedin.com/in/nilanshugarhewal" },
+  ];
 
   return (
     <motion.div
@@ -74,7 +79,7 @@ const ProjectContainerPage: React.FC<Props> = ({
       }}
       exit={{
         backgroundColor: "#00000000",
-        transition: { duration: 1, ease: [0.83, 0, 0.17, 1], delay: 1 },
+        transition: { duration: 1, ease: [0.83, 0, 0.17, 1], delay: 0.3 },
       }}
     >
       <motion.div
@@ -114,7 +119,7 @@ const ProjectContainerPage: React.FC<Props> = ({
                 animate="visible"
                 exit="exit"
               >
-                hi
+                {project.id}
               </motion.div>
             </div>
 
@@ -169,14 +174,23 @@ const ProjectContainerPage: React.FC<Props> = ({
               animate="visible"
               exit="exit"
             >
-              <Image src={image} alt="project image" className="img" />
+              <Image
+                src={project.image}
+                alt="project image"
+                className="img"
+                fill
+              />
             </motion.div>
           </div>
         </div>
 
         {/* Links */}
         <div className="project-view">
-          <div className="link-wrapper-black">
+          <div
+            className={`link-wrapper-black ${
+              project.website == "" ? "display-none" : ""
+            }`}
+          >
             <motion.div
               className="over"
               variants={slideUp(1.6)}
@@ -185,24 +199,26 @@ const ProjectContainerPage: React.FC<Props> = ({
               exit="exit"
             >
               <span className="link">
-                <a href="#">view website</a>
+                <a href={project.website}>view website</a>
                 <div className="link-dot" />
               </span>
             </motion.div>
           </div>
 
           <div className="link-wrapper-black">
-            {links.map((link, i) => (
+            {links.map(({ name, url }, i) => (
               <motion.div
                 key={i}
                 className="over"
-                variants={slideUp(1.6)}
+                variants={slideUp(1.6 + i * 0.2)}
                 initial="hidden"
                 animate="visible"
                 exit="exit"
               >
-                <span className="link" key={link}>
-                  <a href="#">{link}</a>
+                <span className="link">
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    {name}
+                  </a>
                   <div className="link-dot" />
                 </span>
               </motion.div>

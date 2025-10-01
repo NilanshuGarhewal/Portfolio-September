@@ -10,33 +10,30 @@ const DetailedAboutPage = () => {
         </div>
         <div className="about-text">
           <div className="about-text-para">
-            I’m Nilanshu, a final-year B.Tech student passionate about turning
-            ideas into working, impactful solutions. I enjoy building projects
-            that are clean, structured, and user-friendly, with a focus on
-            solving real problems rather than just writing code.
+            With a sharp eye for design and a passion for smooth user
+            interactions, Nilanshu is a full-stack developer who crafts digital
+            products that are clean, responsive, and a joy to use because a
+            great code should not only work — it should flow.
           </div>
 
           <div className="about-text-para">
-            Over the course of my journey, I’ve worked on different projects
-            where I improved performance, optimized workflows, and made
-            interfaces simpler. These experiences taught me not only how to code
-            but also how to think critically, stay consistent, and deliver
-            results that matter.
+            From React and Next.js to Flask and API design, he’s learned by
+            doing — building real projects from the ground up. His standout
+            project, GRESICMUSIC is a full-stack music streaming app designed
+            with polished UI, and seamless animations using tools like Framer
+            Motion and GSAP.
           </div>
 
           <div className="about-text-para">
-            I believe in balancing technical skills with creativity. While my
-            main focus is on software development, I also produce music as a
-            side passion. Running YouTube channels for my beats and remixes has
-            helped me sharpen skills like discipline, audience understanding,
-            and delivering high-quality content consistently.
+            Beyond code, Nilanshu is also a music producer — a creative skill
+            that sharpens his sense of rhythm, detail, and storytelling. This
+            crossover gives his work a unique energy — where logic meets vibe.
           </div>
 
           <div className="about-text-para">
-            Looking ahead, my goal is to start my career in the tech industry
-            where I can learn, grow, and contribute to meaningful projects. I
-            aim to bring both my problem-solving mindset and creative approach
-            to every team I work with.
+            {
+              "Currently, he's diving deeper into advanced frontend animation, backend architecture, and system design, with a goal to become a top-tier creative developer. Whether he’s writing JavaScript or composing beats, the mission stays the same: build things people feel."
+            }
           </div>
         </div>
       </div>
