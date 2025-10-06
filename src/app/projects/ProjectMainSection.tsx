@@ -11,7 +11,7 @@ const projects = [
     techUsed: "React, Typescript, scss, Express, MongoDB.",
     image: "/images/projects/gresic_image.png",
     website: "https://gresicmusic.vercel.app/home",
-    github: "https://github.com/NilanshuGarhewal/Gresic-Music.git",
+    github: "https://github.com/nilanshugarhewal/gresicmusic.git",
   },
   {
     id: "1",
@@ -22,8 +22,7 @@ const projects = [
     techUsed: "Python, Demucs, React, Node.",
     image: "/images/projects/spliq_image.png",
     website: "",
-    github:
-      "https://github.com/NilanshuGarhewal/spliq.git",
+    github: "https://github.com/nilanshugarhewal/spliq.git",
   },
   {
     id: "2",
@@ -34,8 +33,7 @@ const projects = [
     techUsed: "Node.js, Express, MongoDB, React, AWS S3",
     image: "/images/projects/vox_image.png",
     website: "",
-    github:
-      "https://github.com/NilanshuGarhewal/Vox-V1-A-Free-Music-Streaming-App-Using-YouTube-Music-API.git",
+    github: "https://github.com/nilanshugarhewal/vox.git",
   },
   {
     id: "3",
@@ -46,7 +44,7 @@ const projects = [
     techUsed: "HTML, CSS, JAVASCRIPT, map api, mongodb",
     image: "/images/projects/stazy_image.png",
     website: "",
-    github: "https://github.com/NilanshuGarhewal/Stazy-A-Home-Rental-Site.git",
+    github: "https://github.com/nilanshugarhewal/stazy.git",
   },
 ];
 

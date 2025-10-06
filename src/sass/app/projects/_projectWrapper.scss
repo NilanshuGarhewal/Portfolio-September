@@ -47,6 +47,7 @@
       font-size: 1rem;
       font-family: $font-sec;
       text-transform: uppercase;
+      text-align: center;
       color: $text-sec;
 
       @include respond(mobile) {
