@@ -15,6 +15,18 @@ const projects = [
   },
   {
     id: "1",
+    name: "Spliq",
+    des: "Frontend & Backend for Demucs Music Source Seperation.",
+    releaseDate: "06-10-2025",
+    info: "Spliq provides a frontend & backend for Demucs Music Source Seperation tool, which can seperate music into different stems like vocals, drums, bass & others. You can read more about this in GitHub.",
+    techUsed: "Python, Demucs, React, Node.",
+    image: "/images/projects/spliq_image.png",
+    website: "",
+    github:
+      "https://github.com/NilanshuGarhewal/spliq.git",
+  },
+  {
+    id: "2",
     name: "VOX-V1",
     des: "FREE MUSIC STREAMING PLATFORM.",
     releaseDate: "14-07-2025",
@@ -26,7 +38,7 @@ const projects = [
       "https://github.com/NilanshuGarhewal/Vox-V1-A-Free-Music-Streaming-App-Using-YouTube-Music-API.git",
   },
   {
-    id: "2",
+    id: "3",
     name: "Stazy",
     des: "A Home Rental Site.",
     releaseDate: "15-02-2025",
