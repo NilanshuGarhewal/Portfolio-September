@@ -19,7 +19,7 @@ const DetailedAboutPage = () => {
           <div className="about-text-para">
             From React and Next.js to Flask and API design, he’s learned by
             doing — building real projects from the ground up. His standout
-            project, GRESICMUSIC is a full-stack music streaming app designed
+            project, BlueState Music is a full-stack music streaming app designed
             with polished UI, and seamless animations using tools like Framer
             Motion and GSAP.
           </div>

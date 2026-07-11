@@ -22,11 +22,11 @@ const footerData = [
     ],
   },
   {
-    heading: "artist",
+    heading: "music",
     links: [
-      { name: "gresic music", href: "https://gresicmusic.vercel.app/home" },
-      { name: "youtube", href: "https://www.youtube.com/@gresicbeats" },
-      { name: "instagram", href: "https://www.instagram.com/gresicmusic" },
+      { name: "bluestate", href: "https://bluestate.vercel.app/home" },
+      { name: "youtube", href: "https://www.youtube.com/@BlueState_Music" },
+      { name: "instagram", href: "https://www.instagram.com/nilanshuu" },
     ],
   },
 ];

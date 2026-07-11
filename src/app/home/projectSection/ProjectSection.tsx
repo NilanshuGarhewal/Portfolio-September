@@ -8,10 +8,11 @@ import img2 from "@/assets/images/img2.jpg";
 import img3 from "@/assets/images/img3.jpg";
 
 const projects = [
-  { id: 0, name: "0", tooltip: "Gresic Music", image: img1 },
-  { id: 1, name: "1", tooltip: "Spliq", image: img3 },
-  { id: 2, name: "2", tooltip: "Vox V1", image: img3 },
-  { id: 3, name: "3", tooltip: "Stazy", image: img2 },
+  { id: 1, name: "1", tooltip: "BlueState Music", image: img1 },
+  { id: 2, name: "2", tooltip: "Elevate", image: img1 },
+  { id: 3, name: "3", tooltip: "Spliq", image: img3 },
+  { id: 4, name: "4", tooltip: "Vox V1", image: img3 },
+  { id: 5, name: "5", tooltip: "Stazy", image: img2 },
 ];
 
 const ProjectSection = () => {
